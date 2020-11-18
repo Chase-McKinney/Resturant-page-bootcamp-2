@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/*menu*/
+
+#menu {
+  height: 95vh;
+}
+
+table {
+  width: 90%;
+  margin: 100px auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 1em 0 0 0;
+  vertical-align: bottom;
+  background-image: radial-gradient(black 1px, white 0px);
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+td span {
+  background-color: #fff;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 700;
+}
+
+td:first-child span {
+  padding-right: 0.25em;
+}
+
+td:last-child {
+  text-align: right;
+  width: 3em;
+}
+
+td:last-child span {
+  padding-left: 0.25em;
+}
+
+.table-head {
+  font-style: italic;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  display: flex;
+}
+/* Headings */
+
+header {
+  background-color: #4b4b4c;
+  color: #f5f6fa;
+  border-bottom: 2px solid #f39c12;
+}
+
+/* Nav */
+nav {
+  min-height: 5vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#sun-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #f39c12;
+}
+
+#btn-container {
+  display: flex;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: dashed 1px black;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  height: 10vh;
+}
+
+#button {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  padding: 0.5rem 1rem 0.5rem;
+  border: solid 1px black;
+  border-radius: 0.2rem;
+}
+
+#button:hover {
+  background-color: gainsboro;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  background: darkgrey;
+  align-items: flex-end;
+}
+
+#left-content {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #f1c40f;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-top: 0.8rem;
+}
+
+span {
+  font-size: 1rem;
+  color: black;
+}

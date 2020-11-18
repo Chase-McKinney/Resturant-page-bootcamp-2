@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+#res-form h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+#container {
+  display: flex;
+}
+
+#res-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+#button {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  padding: 0.5rem 1rem 0.5rem;
+  border: solid 1px black;
+  border-radius: 0.2rem;
+}
+
+#button:hover {
+  background-color: gainsboro;
+  color: white;
+  transition: ease-in-out 0.5s;
+}
+
+/* Headings */
+
+header {
+  background-color: #4b4b4c;
+  color: #f5f6fa;
+  border-bottom: 2px solid #f39c12;
+}
+
+/* Nav */
+nav {
+  min-height: 5vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#sun-icon {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #f39c12;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 3vh;
+  background: darkgrey;
+  align-items: flex-end;
+}
+
+#left-content {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  color: #f1c40f;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-top: 0.8rem;
+}
+
+span {
+  font-size: 1rem;
+  color: black;
+}
